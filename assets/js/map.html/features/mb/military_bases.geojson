@@ -1,0 +1,174 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [7.6001, 49.4007]
+        },
+        "properties": {
+          "name": "Ramstein Air Base",
+          "country": "Germany",
+          "branch": "US Air Force"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [0.4253, 52.4025]
+        },
+        "properties": {
+          "name": "Mildenhall Air Base",
+          "country": "United Kingdom",
+          "branch": "US Air Force"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [35.4391, 37.0020]
+        },
+        "properties": {
+          "name": "Incirlik Air Base",
+          "country": "Turkey",
+          "branch": "US Air Force"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-6.2885, 36.6355]
+        },
+        "properties": {
+          "name": "Naval Station Rota",
+          "country": "Spain",
+          "branch": "US Navy"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [6.6956, 49.9845]
+        },
+        "properties": {
+          "name": "Spangdahlem Air Base",
+          "country": "Germany",
+          "branch": "US Air Force"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [12.6299, 46.3152]
+        },
+        "properties": {
+          "name": "Aviano Air Base",
+          "country": "Italy",
+          "branch": "US Air Force"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [20.3005, 42.2180]
+        },
+        "properties": {
+          "name": "Camp Bondsteel",
+          "country": "Kosovo",
+          "branch": "US Army"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [10.0992, 52.7158]
+        },
+        "properties": {
+          "name": "Bergen-Hohne Training Area",
+          "country": "Germany",
+          "branch": "NATO"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [8.2433, 50.0766]
+        },
+        "properties": {
+          "name": "U.S. Army Garrison Wiesbaden",
+          "country": "Germany",
+          "branch": "US Army"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [20.8000, 65.5700]
+        },
+        "properties": {
+          "name": "Vidsel Test Range",
+          "country": "Sweden",
+          "branch": "Swedish Armed Forces"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [15.2083, 51.5167]
+        },
+        "properties": {
+          "name": "Zagan Military Base",
+          "country": "Poland",
+          "branch": "Polish Army"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [23.0731, 55.7950]
+        },
+        "properties": {
+          "name": "Siauliai Air Base",
+          "country": "Lithuania",
+          "branch": "NATO"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24.0000, 44.0000]
+        },
+        "properties": {
+          "name": "Deveselu Military Base",
+          "country": "Romania",
+          "branch": "NATO (Aegis Ashore)"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [19.5000, 42.0000]
+        },
+        "properties": {
+          "name": "Camp Bondsteel",
+          "country": "Kosovo",
+          "branch": "US Army (KFOR)"
+        }
+      }
+    ]
+  }
+  
