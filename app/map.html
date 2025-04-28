@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Find The Place To Be - Map</title>
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/map/map.css">
+    <link rel="stylesheet" href="./assets/css/map/inputs.css">
+    <link rel="stylesheet" href="./assets/css/map/bar.css">
+    
+    
+    <!-- JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.js"></script>
+
+    <script defer src="./assets/js/map/features/npp/npp.js"></script>
+    <script defer src="./assets/js/map/features/tempmax/tempmax.js"></script>
+    <script defer src="./assets/js/map/features/flooding/flooding.js"></script>
+    <script defer src="./assets/js/map/features/seismic/seismic.js"></script>
+    <script defer src="./assets/js/map/features/mb/mb.js"></script>
+    <script defer src="./assets/js/map/map.js"></script>
+    <script defer src="./assets/js/map/inputs.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="params-container">
+        <h4>Map Adjustments parameters (WIP)</h4>
+        <section>
+            <div class="input-container">
+                <label class="switch-container">
+                    <input id="npp-enable" type="checkbox" checked>
+                    <div class="switch"></div>
+                    <span class="switch-label">Nuclear power plants</span>
+                  </label>
+                <br>
+                <label class="slider-container">
+                    <span class="slider-label">Display Radius</span>
+                    <div>
+                        <input type="range" id="npp-radius" min="5" max="300" step="1" value="50">
+                        <span id="npp-radius-value">50km</span>
+                    </div>
+                </label>
+            </div>
+            <div class="input-container">
+                <label class="switch-container">
+                    <input id="mb-enable" type="checkbox" checked>
+                    <div class="switch"></div>
+                    <span class="switch-label">Military Bases</span>
+                  </label>
+                <br>
+                <label class="slider-container">
+                    <span class="slider-label">Display Radius</span>
+                    <div>
+                        <input type="range" id="mb-radius" min="1" max="50" step="1" value="5">
+                        <span id="mb-radius-value">5km</span>
+                    </div>
+                </label>
+            </div>
+            <div class="input-container">
+                <label class="switch-container">
+                    <input id="tempmax2050-enable" type="checkbox" checked>
+                    <div class="switch"></div>
+                    <span class="switch-label">Heatmap: Max Temp 2050</span>
+                  </label>
+                <br>
+                <div class="color-scale"></div>
+                <div class="labels">
+                <span>-20</span>
+                <span>-10</span>
+                <span>-5</span>
+                <span>0</span>
+                <span>15</span>
+                <span>30</span>
+                <span>60</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <label class="switch-container">
+                    <input id="flooding-enable" type="checkbox" checked>
+                    <div class="switch"></div>
+                    <span class="switch-label">Flooding risks areas</span>
+                  </label>
+                <br>
+            </div>
+            <div class="input-container">
+                <label class="switch-container">
+                    <input id="seismic-enable" type="checkbox" checked>
+                    <div class="switch"></div>
+                    <span class="switch-label">Seismic risks areas</span>
+                  </label>
+                <br>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

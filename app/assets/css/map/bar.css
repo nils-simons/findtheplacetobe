@@ -1,0 +1,19 @@
+#params-container {
+  z-index: 10;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  max-width: 20vw;
+  width: 20vw;
+  background-color: rgb(244, 244, 244);
+  height: 100vh;
+  /* text-align: center; */
+  /* padding: 10px; */
+}
+
+.input-container {
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 12px;
+}
