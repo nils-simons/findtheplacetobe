@@ -15,6 +15,7 @@ map.on("style.load", () => {
   loadClimate();
   loadFloodings();
   loadSeismic();
+  loadTsunami();
 
   map.setFog({}); // Set the default atmosphere style
 });

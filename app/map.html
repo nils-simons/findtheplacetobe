@@ -18,11 +18,14 @@
     
     <!-- JS -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+
 
     <script defer src="./assets/js/map/features/npp/npp.js"></script>
     <script defer src="./assets/js/map/features/tempmax/tempmax.js"></script>
     <script defer src="./assets/js/map/features/flooding/flooding.js"></script>
     <script defer src="./assets/js/map/features/seismic/seismic.js"></script>
+    <script defer src="./assets/js/map/features/tsunami/tsunami.js"></script>
     <script defer src="./assets/js/map/features/mb/mb.js"></script>
     <script defer src="./assets/js/map/map.js"></script>
     <script defer src="./assets/js/map/inputs.js"></script>
@@ -93,6 +96,14 @@
                     <input id="seismic-enable" type="checkbox" checked>
                     <div class="switch"></div>
                     <span class="switch-label">Seismic risks areas</span>
+                  </label>
+                <br>
+            </div>
+            <div class="input-container">
+                <label class="switch-container">
+                    <input id="tsunami-enable" type="checkbox" checked>
+                    <div class="switch"></div>
+                    <span class="switch-label">Tsunami risks areas</span>
                   </label>
                 <br>
             </div>
