@@ -8,6 +8,9 @@ const loadClimate = () => {
     id: "temperature-heatmap",
     type: "heatmap",
     source: "temperature-data",
+    layout: {
+      visibility: 'none'  // This hides the layer by default
+    },
     // minzoom: 2, // Optional: control the min zoom level where the heatmap is visible
     maxzoom: 6, // Optional: control the max zoom level where the heatmap is visible
     paint: {

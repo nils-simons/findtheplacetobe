@@ -94,7 +94,9 @@ const loadNPP = () => {
         id: layerId,
         type: "fill",
         source: sourceId,
-        layout: {},
+        layout: {
+          visibility: 'none'  // This hides the layer by default
+        },
         paint: {
           "fill-color": "#ff0000",
           "fill-opacity": 0.3,

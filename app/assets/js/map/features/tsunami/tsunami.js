@@ -43,6 +43,9 @@ const loadTsunami = () => {
         id: "tsunami-risk-circles",
         type: "fill",
         source: "tsunami-risk",
+        layout: {
+          visibility: 'none'  // This hides the layer by default
+        },
         paint: {
           "fill-color": "#ff0000",
           "fill-opacity": 0.3,
@@ -55,6 +58,9 @@ const loadTsunami = () => {
         id: "tsunami-risk-outline",
         type: "line",
         source: "tsunami-risk",
+        layout: {
+          visibility: 'none'  // This hides the layer by default
+        },
         paint: {
           "line-color": "#ff0000",
           "line-width": 2,

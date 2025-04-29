@@ -11,7 +11,9 @@ const loadFloodings = () => {
         'id': 'flood-risk-layer',
         'type': 'fill',
         'source': 'flood-risk',
-        'layout': {},
+        'layout': {
+            'visibility': 'none'  // This hides the layer by default
+        },
         'paint': {
             'fill-color': '#1E90FF', // DodgerBlue
             'fill-opacity': 0.5
@@ -23,7 +25,9 @@ const loadFloodings = () => {
         'id': 'flood-risk-borders',
         'type': 'line',
         'source': 'flood-risk',
-        'layout': {},
+        'layout': {
+            'visibility': 'none'  // This hides the layer by default
+        },
         'paint': {
             'line-color': '#000000',
             'line-width': 2

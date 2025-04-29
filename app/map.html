@@ -26,6 +26,8 @@
     <script defer src="./assets/js/map/features/flooding/flooding.js"></script>
     <script defer src="./assets/js/map/features/seismic/seismic.js"></script>
     <script defer src="./assets/js/map/features/tsunami/tsunami.js"></script>
+    <script defer src="./assets/js/map/features/crime/crime.js"></script>
+    <script defer src="./assets/js/map/features/airquality/airquality.js"></script>
     <script defer src="./assets/js/map/features/mb/mb.js"></script>
     <script defer src="./assets/js/map/map.js"></script>
     <script defer src="./assets/js/map/inputs.js"></script>
@@ -33,11 +35,11 @@
 <body>
     <div id="map"></div>
     <div id="params-container">
-        <h4>Map Adjustments parameters (WIP)</h4>
+        <h4 class="params-title">Map Adjustments parameters (WIP)</h4>
         <section>
             <div class="input-container">
                 <label class="switch-container">
-                    <input id="npp-enable" type="checkbox" checked>
+                    <input id="npp-enable" type="checkbox" >
                     <div class="switch"></div>
                     <span class="switch-label">Nuclear power plants</span>
                   </label>
@@ -52,7 +54,7 @@
             </div>
             <div class="input-container">
                 <label class="switch-container">
-                    <input id="mb-enable" type="checkbox" checked>
+                    <input id="mb-enable" type="checkbox" >
                     <div class="switch"></div>
                     <span class="switch-label">Military Bases</span>
                   </label>
@@ -67,12 +69,12 @@
             </div>
             <div class="input-container">
                 <label class="switch-container">
-                    <input id="tempmax2050-enable" type="checkbox" checked>
+                    <input id="tempmax2050-enable" type="checkbox" >
                     <div class="switch"></div>
-                    <span class="switch-label">Heatmap: Max Temp 2050</span>
+                    <span class="switch-label">Heatmap: Max Temp 2050 C°</span>
                   </label>
                 <br>
-                <div class="color-scale"></div>
+                <div class="color-scale-maxtemp"></div>
                 <div class="labels">
                 <span>-20</span>
                 <span>-10</span>
@@ -85,7 +87,7 @@
             </div>
             <div class="input-container">
                 <label class="switch-container">
-                    <input id="flooding-enable" type="checkbox" checked>
+                    <input id="flooding-enable" type="checkbox" >
                     <div class="switch"></div>
                     <span class="switch-label">Flooding risks areas</span>
                   </label>
@@ -93,7 +95,7 @@
             </div>
             <div class="input-container">
                 <label class="switch-container">
-                    <input id="seismic-enable" type="checkbox" checked>
+                    <input id="seismic-enable" type="checkbox" >
                     <div class="switch"></div>
                     <span class="switch-label">Seismic risks areas</span>
                   </label>
@@ -101,11 +103,42 @@
             </div>
             <div class="input-container">
                 <label class="switch-container">
-                    <input id="tsunami-enable" type="checkbox" checked>
+                    <input id="tsunami-enable" type="checkbox" >
                     <div class="switch"></div>
                     <span class="switch-label">Tsunami risks areas</span>
                   </label>
                 <br>
+            </div>
+            <div class="input-container">
+                <label class="switch-container">
+                    <input id="airquality-enable" type="checkbox" >
+                    <div class="switch"></div>
+                    <span class="switch-label">Airquality</span>
+                  </label>
+                <br>
+                <div class="color-scale-airquality"></div>
+                <div class="labels">
+                <span>0 µg/m³</span>
+                <span>200 µg/m³</span>
+                <span>400 µg/m³</span>
+                <span>600 µg/m³</span>
+                <span>800 µg/m³</span>
+                <span>1000 µg/m³</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <label class="switch-container">
+                    <input id="crime-enable" type="checkbox" >
+                    <div class="switch"></div>
+                    <span class="switch-label">Crime rate index</span>
+                  </label>
+                <br>
+                <div class="color-scale-crime"></div>
+                <div class="labels">
+                <span>20</span>
+                <span>50</span>
+                <span>80</span>
+                </div>
             </div>
         </section>
     </div>

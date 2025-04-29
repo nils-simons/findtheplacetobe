@@ -38,7 +38,9 @@ const loadMB = () => {
         id: layerId,
         type: "fill",
         source: sourceId,
-        layout: {},
+        layout: {
+          visibility: 'none'  // This hides the layer by default
+        },
         paint: {
           "fill-color": "#005713",
           "fill-opacity": 0.3,

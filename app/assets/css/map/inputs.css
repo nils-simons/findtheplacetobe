@@ -156,12 +156,34 @@ input[type="range"]:not(:active) {
 
 /* COLOR SCALE */
 
-.color-scale {
+.color-scale-maxtemp {
   display: flex;
   align-items: center;
   width: 300px;
   height: 30px;
   background: linear-gradient(to right, rgb(29, 16, 56), rgb(53, 92, 248), rgba(255, 255, 255, 0.33), rgb(251, 255, 13), rgb(255, 13, 13), rgb(28, 0, 0));
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.color-scale-airquality {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 30px;
+  background: linear-gradient(to right, rgba(33,102,172,0), rgb(103,169,207), rgb(209,229,240), rgb(253,219,199), rgb(239,138,98), rgb(178,24,43));
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.color-scale-crime {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 30px;
+  background: linear-gradient(to right, #f1eef6, #bdc9e1, #045a8d);
   border: 1px solid #ccc;
   margin-bottom: 10px;
   border-radius: 5px;

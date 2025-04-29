@@ -11,7 +11,9 @@ const loadSeismic = () => {
         'id': 'seismic-risk-layer',
         'type': 'fill',
         'source': 'seismic-risk',
-        'layout': {},
+        'layout': {
+            'visibility': 'none'  // This hides the layer by default
+        },
         'paint': {
             'fill-color': '#f5b642', // DodgerBlue
             'fill-opacity': 0.5
@@ -23,7 +25,9 @@ const loadSeismic = () => {
         'id': 'seismic-risk-borders',
         'type': 'line',
         'source': 'seismic-risk',
-        'layout': {},
+        'layout': {
+            'visibility': 'none'  // This hides the layer by default
+        },
         'paint': {
             'line-color': '#000000',
             'line-width': 2
