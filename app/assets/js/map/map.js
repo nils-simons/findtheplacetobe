@@ -27,3 +27,5 @@ map.on("style.load", () => {
 loadNPP();
 
 loadMB();
+
+map.on("loa")

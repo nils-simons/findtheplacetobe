@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="./assets/css/map/loader.css">
     <link rel="stylesheet" href="./assets/css/map/map.css">
     <link rel="stylesheet" href="./assets/css/map/inputs.css">
     <link rel="stylesheet" href="./assets/css/map/bar.css">
@@ -21,6 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
 
 
+    <script defer src="./assets/js/map/network.js"></script>
     <script defer src="./assets/js/map/features/npp/npp.js"></script>
     <script defer src="./assets/js/map/features/tempmax/tempmax.js"></script>
     <script defer src="./assets/js/map/features/flooding/flooding.js"></script>
@@ -33,6 +35,15 @@
     <script defer src="./assets/js/map/inputs.js"></script>
 </head>
 <body>
+    <div id="loader">
+        <div class="loader-container">
+            <div class="loader-anim"></div>
+            <br>
+            <br>
+            <br>
+            <span>This page can take some time to load depending on your internet connection (up to 30 seconds).</span>
+        </div>
+    </div>
     <div id="map"></div>
     <div id="params-container">
         <h4 class="params-title">Map Adjustments parameters (WIP)</h4>
