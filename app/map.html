@@ -22,7 +22,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
 
 
-    <script defer src="./assets/js/map/network.js"></script>
     <script defer src="./assets/js/map/features/npp/npp.js"></script>
     <script defer src="./assets/js/map/features/tempmax/tempmax.js"></script>
     <script defer src="./assets/js/map/features/flooding/flooding.js"></script>
@@ -32,6 +31,7 @@
     <script defer src="./assets/js/map/features/airquality/airquality.js"></script>
     <script defer src="./assets/js/map/features/mb/mb.js"></script>
     <script defer src="./assets/js/map/map.js"></script>
+    <script defer src="./assets/js/map/network.js"></script>
     <script defer src="./assets/js/map/inputs.js"></script>
 </head>
 <body>
@@ -41,7 +41,7 @@
             <br>
             <br>
             <br>
-            <span>This page can take some time to load depending on your internet connection (up to 30 seconds).</span>
+            <span>This page may take some time to load depending on your internet connection (average ~60 seconds).</span>
         </div>
     </div>
     <div id="map"></div>
@@ -87,13 +87,11 @@
                 <br>
                 <div class="color-scale-maxtemp"></div>
                 <div class="labels">
-                <span>-20</span>
-                <span>-10</span>
-                <span>-5</span>
-                <span>0</span>
-                <span>15</span>
-                <span>30</span>
-                <span>60</span>
+                <span>~0</span>
+                <span>~12</span>
+                <span>~24</span>
+                <span>~36</span>
+                <span>~60</span>
                 </div>
             </div>
             <div class="input-container">

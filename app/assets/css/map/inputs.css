@@ -161,7 +161,7 @@ input[type="range"]:not(:active) {
   align-items: center;
   width: 300px;
   height: 30px;
-  background: linear-gradient(to right, rgb(29, 16, 56), rgb(53, 92, 248), rgba(255, 255, 255, 0.33), rgb(251, 255, 13), rgb(255, 13, 13), rgb(28, 0, 0));
+  background: linear-gradient(to right, rgba(255,255,255,0), rgb(53, 92, 248), rgb(251, 255, 13), rgb(255, 13, 13), rgb(28, 0, 0));
   border: 1px solid #ccc;
   margin-bottom: 10px;
   border-radius: 5px;

@@ -88,12 +88,35 @@ function waitForFullNetworkIdle({ idleTime = 500, timeout = 10000 } = {}) {
 }
 
 
-waitForFullNetworkIdle({ idleTime: 500, timeout: 15000 })
-  .then(async () => {
-    console.log('✅ All network requests (Mapbox too) finished.');
-    await new Promise(r => setTimeout(r, 2000));
-    document.getElementById('loader').style.display = 'none';
-  })
-  .catch(err => {
-    console.error(err.message);
+function waitForSourceLoaded(map, sourceId) {
+  return new Promise(resolve => {
+    function check(e) {
+      if (e.sourceId === sourceId && e.isSourceLoaded) {
+        map.off('sourcedata', check);
+        resolve();
+      }
+    }
+    map.on('sourcedata', check);
   });
+}
+
+
+Promise.all([
+  waitForSourceLoaded(map, 'flood-risk'),
+  waitForFullNetworkIdle({ idleTime: 500, timeout: 60000 }),
+]).then(() => {
+  console.log('🎉 Map and flooding.geojson are fully loaded.');
+  document.getElementById('loader').style.display = 'none';
+});
+
+
+
+// waitForFullNetworkIdle({ idleTime: 500, timeout: 15000 })
+//   .then(async () => {
+//     console.log('✅ All network requests (Mapbox too) finished.');
+//     await new Promise(r => setTimeout(r, 2000));
+//     document.getElementById('loader').style.display = 'none';
+//   })
+//   .catch(err => {
+//     console.error(err.message);
+//   });
